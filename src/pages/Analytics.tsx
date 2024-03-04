@@ -104,14 +104,14 @@ export const Analytics = () => {
         }
     };
 
-    const TipChartData = [
+    const TPSChartData = [
         {
             name: "",
-            data: [2600, 2180, 3900, 3068, 1870]
+            data: [0.00715, 0.00598, 0.01640, 0.01606, 0.02840, 0.00140]
         },
     ];
 
-    const TipChartOptions: any = {
+    const TPSChartOptions: any = {
         chart: {
             toolbar: {
                 show: false,
@@ -182,10 +182,10 @@ export const Analytics = () => {
                     fontWeight: "500",
                 },
                 formatter: function (value: number) {
-                    if (value >= 1000) {
-                        return value / 1000 + 'K';
+                    if (value >= 1) {
+                        return value ;
                     }
-                    return value;
+                    return 0;
                 },
             },
             show: true,
@@ -502,43 +502,64 @@ export const Analytics = () => {
                 </div>
 
                 <div className="grid grid-cols-4 gap-4 mt-5">
-                    <div className="cta-card col row-span-2" style={{ padding: '0' }}>
+                    <div className="cta-card col" style={{ padding: '0' }}>
+                        <div className="pt-3 ps-3">
+                            <span>User Transactions</span>
+                        </div>
                         <LineChart
                             chartData={TransactionChartData}
                             chartOptions={TransactionChartOptions}
                         />
                     </div>
-                    <div className="cta-card col row-span-2" style={{ padding: '0' }}>
+                    <div className="cta-card col" style={{ padding: '0' }}>
+                        <div className="pt-3 ps-3">
+                            <span>TPS</span>
+                        </div>
                         <LineChart
-                            chartData={TipChartData}
-                            chartOptions={TipChartOptions}
+                            chartData={TPSChartData}
+                            chartOptions={TPSChartOptions}
                         />
                     </div>
-                    <div className="cta-card col row-span-2" style={{ padding: '0' }}>
+                    <div className="cta-card col" style={{ padding: '0' }}>
+                        <div className="pt-3 ps-3">
+                            <span>Daily Active Accounts</span>
+                        </div>
                         <BarChart
                             chartData={DailyAccountsChartData}
-                            chartOptions={TipChartOptions}
+                            chartOptions={TPSChartOptions}
                         />
                     </div>
-                    <div className="cta-card col row-span-2" style={{ padding: '0' }}>
+                    <div className="cta-card col" style={{ padding: '0' }}>
+                        <div className="pt-3 ps-3">
+                            <span>New Accounts Created</span>
+                        </div>
                         <BarChart
                             chartData={NewAccountsChartData}
-                            chartOptions={TipChartOptions}
+                            chartOptions={TPSChartOptions}
                         />
                     </div>
-                    <div className="cta-card col row-span-2" style={{ padding: '0' }}>
+                    <div className="cta-card col" style={{ padding: '0' }}>
+                        <div className="pt-3 ps-3">
+                            <span>Deployed Scripts</span>
+                        </div>
                         <BarChart
                             chartData={DeployedScriptsChartData}
-                            chartOptions={TipChartOptions}
+                            chartOptions={TPSChartOptions}
                         />
                     </div>
-                    <div className="cta-card col row-span-2" style={{ padding: '0' }}>
+                    <div className="cta-card col" style={{ padding: '0' }}>
+                        <div className="pt-3 ps-3">
+                            <span>Gas Consumption</span>
+                        </div>
                         <AreaChart
                             chartData={GasChartData}
                             chartOptions={GasChartOptions}
                         />
                     </div>
-                    <div className="cta-card col row-span-2" style={{ padding: '0' }}>
+                    <div className="cta-card col" style={{ padding: '0' }}>
+                        <div className="pt-3 ps-3">
+                            <span>Average Gas Unit Price</span>
+                        </div>
                         <AreaChart
                             chartData={AverageGasData}
                             chartOptions={AverageGasChartOptions}

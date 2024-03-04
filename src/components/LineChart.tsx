@@ -22,7 +22,7 @@ const LineChart = ({ chartData, chartOptions }: LineChartProps) => {
         series={data}
         type='line'
         width='100%'
-        height='100%'
+        // height='100%'
       />
     </>
   );

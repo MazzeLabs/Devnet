@@ -21,7 +21,7 @@ const AreaChart = ({ chartData, chartOptions }: AreaChartProps) => {
       series={data}
       type='area'
       width='100%'
-      height='100%'
+    //   height='100%'
     />
   );
 };

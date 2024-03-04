@@ -21,7 +21,7 @@ export const BarChart = ({ chartData, chartOptions }: BarChartProps) => {
             series={data}
             type='bar'
             width='100%'
-            height='100%'
+            // height='100%'
         />
     );
 }
