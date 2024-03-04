@@ -1,10 +1,11 @@
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
+import LeaderboardPagination from "../components/LeaderboardPagination"
 
 export const Leaderboard = () => {
     return (
         <div>
-            <div className="main-container w-container">
+            <div className="main-container w-container mb-20">
                 <Header />
                 <div style={{ marginTop: '25px' }}>
                     <input className="w-input" type="text"
@@ -46,6 +47,10 @@ export const Leaderboard = () => {
 
                     <div className="ms-2">Leaderboard</div>
                 </button>
+
+                <div className="mt-5">
+                    <LeaderboardPagination />
+                </div>
             </div>
             <Footer />
         </div>
