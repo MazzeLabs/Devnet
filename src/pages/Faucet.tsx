@@ -11,7 +11,7 @@ export const Faucet = () => {
             style={{
               width: '100%',
               padding: '22px 22px',
-              fontSize: '18px',
+              fontSize: '14px',
               border: '1px solid #ffa2001f',
               color: 'white',
               backgroundColor: 'transparent'
@@ -23,7 +23,7 @@ export const Faucet = () => {
         <div id="alert-1" className="flex items-center p-4 mb-4 text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
           <h3 className="orange">Faucet</h3>
           <div className="ms-3 text-sm font-medium">
-            Here you can claim 10 CDTs once per address.<br />
+            Here you can claim 10 MAZZEs once per address.<br />
             Please complete the captcha and provide an address in the required field.
           </div>
           <button type="button" className="ms-auto -mx-1.5 -my-1.5 bg-blue-50 text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700" data-dismiss-target="#alert-1" aria-label="Close">

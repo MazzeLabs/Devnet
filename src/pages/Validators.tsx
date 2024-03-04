@@ -12,7 +12,7 @@ export const Validators = () => {
             style={{
               width: '100%',
               padding: '22px 22px',
-              fontSize: '18px',
+              fontSize: '14px',
               border: '1px solid #ffa2001f',
               color: 'white',
               backgroundColor: 'transparent'
