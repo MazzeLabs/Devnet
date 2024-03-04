@@ -17,8 +17,8 @@ export const Header = () => {
                             <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/">Home</Link>
                             <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/analytics">Analytics</Link>
                             <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/validators">Validators</Link>
-                            <a style={{marginRight: '10px', cursor: 'pointer'}}>Faucet</a>
-                            <a style={{marginRight: '10px', cursor: 'pointer'}}>Leaderboard</a>
+                            <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/faucet">Faucet</Link>
+                            <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/leaderboard">Leaderboard</Link>
                         </div>
                         <a href="https://docs.mazze.io" target="_blank" id="w-node-_42939e0c-fbc1-4837-03c5-538c389ab0e5-389ab0b1" className="button wide-card w-inline-block">
                             <div>Documentation</div>

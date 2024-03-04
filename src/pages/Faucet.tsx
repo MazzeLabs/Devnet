@@ -1,7 +1,10 @@
 export const Faucet = () => {
     return (
         <div className="">
-            This is Faucet Page
+
+            <div className="tooltip">Hover over me
+                <span className="tooltiptext">Tooltip text</span>
+            </div>
         </div>
     )
 }
