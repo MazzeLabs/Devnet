@@ -218,3 +218,127 @@ label span {
     visibility: visible;
     opacity: 1;
 }
+
+.layer {
+    width: 50px;
+    height: 50px;
+    opacity: 0.95;
+
+    position: absolute;
+    left: 40px;
+
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateX(45deg);
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotate(45deg);
+}
+
+.layer:nth-child(1) {
+    animation: firstLayer 2s forwards infinite;
+}
+
+.layer:nth-child(2) {
+    animation: secondLayer 2s forwards infinite;
+}
+
+.layer:nth-child(3) {
+    animation: thirdLayer 2s forwards infinite;
+}
+
+.layer:nth-child(4) {
+    animation: fourthLayer 2s forwards infinite;
+}
+
+.layer:nth-child(5) {
+    animation: fifthLayer 2s forwards infinite;
+}
+
+.layer:nth-child(1) {
+    background: rgba(255, 162, 0, 1);
+}
+
+.layer:nth-child(2) {
+    background: rgba(255, 162, 0, 0.8);
+}
+
+.layer:nth-child(3) {
+    background: rgba(255, 162, 0, 0.6);
+}
+
+.layer:nth-child(4) {
+    background: rgba(255, 162, 0, 0.4);
+}
+
+.layer:nth-child(5) {
+    background: rgba(255, 162, 0, 0.2);
+}
+
+@keyframes firstLayer {
+    0% {
+        top: 70px
+    }
+
+    50% {
+        top: 25px
+    }
+
+    100% {
+        top: 70px
+    }
+}
+
+@keyframes secondLayer {
+    0% {
+        top: 70px
+    }
+
+    50% {
+        top: 30px
+    }
+
+    100% {
+        top: 70px
+    }
+}
+
+@keyframes thirdLayer {
+    0% {
+        top: 70px
+    }
+
+    50% {
+        top: 35px
+    }
+
+    100% {
+        top: 70px
+    }
+}
+
+@keyframes fourthLayer {
+    0% {
+        top: 70px
+    }
+
+    50% {
+        top: 40px
+    }
+
+    100% {
+        top: 70px
+    }
+}
+
+@keyframes fifthLayer {
+    0% {
+        top: 70px
+    }
+
+    50% {
+        top: 45px
+    }
+
+    100% {
+        top: 70px
+    }
+}

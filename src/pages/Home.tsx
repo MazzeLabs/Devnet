@@ -158,7 +158,28 @@ export const Home = () => {
                             chartOptions={lineChartOptions}
                         />
                     </div>
-                    <div className="cta-card col">
+                    <div className="cta-card col" style={{display: 'flex', flexDirection: 'row', padding: '0'}}>
+                        <div className="relative">
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                        </div>
+                        <div className="relative">
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                        </div>
+                        <div className="relative">
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                            <div className="layer"></div>
+                        </div>
                     </div>
                     <div className="cta-card col">
                         <div className="pricing-crown">
