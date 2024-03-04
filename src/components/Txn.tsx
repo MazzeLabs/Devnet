@@ -100,7 +100,7 @@ export const Transaction: React.FC<BlockProps> = ({ hash, from, to, timestamp, c
                 </p>
             </div>
             <div style={{ marginLeft: 'auto' }}>
-                <span>{cdt} CDT</span>
+                <span>{cdt} MAZ</span>
             </div>
         </div>
     )

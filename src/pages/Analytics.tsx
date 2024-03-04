@@ -463,7 +463,7 @@ export const Analytics = () => {
                                 <div className="pricing-detail"><strong>Max Supply</strong></div>
                             </div>
                             <div className="price-wrapper-month">
-                                <h3 className="price-text" style={{ marginBottom: '0px' }}>21,000,000 CDT</h3>
+                                <h3 className="price-text" style={{ marginBottom: '0px' }}>21,000,000 MAZ</h3>
                             </div>
                         </div>
                     </div>
