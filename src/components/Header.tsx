@@ -16,7 +16,7 @@ export const Header = () => {
                         <div>
                             <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/">Home</Link>
                             <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/analytics">Analytics</Link>
-                            <a style={{marginRight: '10px', cursor: 'pointer'}}>Validators</a>
+                            <Link style={{marginRight: '10px', cursor: 'pointer'}} to="/validators">Validators</Link>
                             <a style={{marginRight: '10px', cursor: 'pointer'}}>Faucet</a>
                             <a style={{marginRight: '10px', cursor: 'pointer'}}>Leaderboard</a>
                         </div>

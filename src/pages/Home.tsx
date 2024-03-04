@@ -117,9 +117,9 @@ export const Home = () => {
                     <input className="w-input" type="text"
                         style={{
                             width: '100%',
-                            padding: '12px 12px',
+                            padding: '22px 22px',
                             fontSize: '18px',
-                            border: '1px solid #ccc',
+                            border: '1px solid #ffa2001f',
                             color: 'white',
                             backgroundColor: 'transparent'
                         }}
