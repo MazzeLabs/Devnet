@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="section-footer wf-section mt-10">
+    <footer className="section-footer wf-section mt-10">
       <div className="cards">
         <div className="footer-content-wrapper">
           <div className="footer-brand">
@@ -722,6 +722,6 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
