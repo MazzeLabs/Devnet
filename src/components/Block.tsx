@@ -75,7 +75,7 @@ export const Block: React.FC<BlockProps> = ({ hash, blocknumber, timestamp, txns
                 <p style={{ color: '#ffa200', fontSize: '16px' }}>{txns} txns</p>
             </div>
             <div style={{ marginLeft: 'auto' }}>
-                <span>{token} MAZ</span>
+                <span>{token} MAZZE</span>
             </div>
         </div>
     )
