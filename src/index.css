@@ -225,7 +225,7 @@ label span {
     opacity: 0.95;
 
     position: absolute;
-    left: 40px;
+    left: 35px;
 
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateX(45deg);

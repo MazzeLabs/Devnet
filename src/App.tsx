@@ -7,17 +7,19 @@ import { Analytics } from './pages/Analytics';
 import { Validators } from './pages/Validators';
 import { Faucet } from './pages/Faucet';
 import { Leaderboard } from './pages/Leaderboard';
+import { DetailBlock } from './subpages/BlockDetail';
 
 function App() {
   return (
     <Router>
       <div className="noise"></div>
       <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/analytics" Component={Analytics} />
-        <Route path="/validators" Component={Validators} />
-        <Route path="/faucet" Component={Faucet} />
-        <Route path="/leaderboard" Component={Leaderboard} />
+        <Route path="/" element={<Home />} />
+        <Route path="/analytics" element={<Analytics />} />
+        <Route path="/validators" element={<Validators />} />
+        <Route path="/faucet" element={<Faucet />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/block/:blockNumber/*" element={<DetailBlock />} />
       </Routes>
     </Router>
   );

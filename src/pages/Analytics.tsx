@@ -182,10 +182,9 @@ export const Analytics = () => {
           fontWeight: "500",
         },
         formatter: function (value: number) {
-          if (value >= 1) {
-            return value;
-          }
-          return 0;
+          const formattedNumber = Number(value).toFixed(8).replace(/\.?0+$/, '');
+
+          return formattedNumber;
         },
       },
       show: true,
@@ -222,6 +221,91 @@ export const Analytics = () => {
       data: [0, 0, 0, 0, 0, 0, 0]
     }
   ]
+
+  const DeployedScriptsChartOption: any = {
+    chart: {
+      toolbar: {
+        show: false,
+      },
+      dropShadow: {
+        enabled: true,
+        top: 13,
+        left: 0,
+        blur: 10,
+        opacity: 0.1,
+        color: "#4318FF",
+      },
+    },
+    colors: ["#ffa200", "#39B8FF"],
+    markers: {
+      size: 1,
+      colors: "read",
+      strokeColors: "#ffa200",
+      strokeWidth: 3,
+      strokeOpacity: 0.9,
+      strokeDashArray: 0,
+      fillOpacity: 1,
+      discrete: [],
+      shape: "circle",
+      radius: 2,
+      offsetX: 0,
+      offsetY: 0,
+      showNullDataPoints: true,
+    },
+    tooltip: {
+      theme: "dark",
+      enabled: false
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+      type: "line",
+      width: 2
+    },
+    xaxis: {
+      type: "numeric",
+      categories: ["02-22", "", "02-24", "", "02-26"],
+      labels: {
+        rotate: 0,
+        style: {
+          colors: "#A3AED0",
+          fontSize: "12px",
+          fontWeight: "500",
+        },
+      },
+      formatter: function (index: number, value: string) {
+        return index % 2 === 0 ? value : ""; // Hide labels for even indexes
+      },
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          colors: "#A3AED0",
+          fontSize: "12px",
+          fontWeight: "500",
+        },
+      },
+      show: true,
+    },
+    legend: {
+      show: false,
+    },
+    grid: {
+      show: false,
+      row: {
+        color: "#7551FF",
+        opacity: 0.2,
+      },
+    }
+  };
 
   const GasChartData = [
     {
@@ -395,9 +479,9 @@ export const Analytics = () => {
           fontSize: "12px",
           fontWeight: "500",
         },
-        formatter: function (value: number) {
-          return 0;
-        },
+        // formatter: function (value: number) {
+        //   return 0;
+        // },
       },
       show: true,
     },
@@ -460,10 +544,10 @@ export const Analytics = () => {
           <div className="cta-card col">
             <div className="pricing-crown">
               <div className="plan-title">
-                <div className="pricing-detail"><strong>Max Supply</strong></div>
+                <div className="pricing-detail"><strong>REWARDS PER BLOCK</strong></div>
               </div>
               <div className="price-wrapper-month">
-                <h3 className="price-text" style={{ marginBottom: '0px' }}>21,000,000 MAZZE</h3>
+                <h3 className="price-text" style={{ marginBottom: '0px' }}>14 MAZZE</h3>
               </div>
             </div>
           </div>
@@ -540,7 +624,7 @@ export const Analytics = () => {
           </div>
           <div className="cta-card col" style={{ padding: '0' }}>
             <div className="pt-3 ps-3">
-              <span>Deployed Scripts</span>
+              <span>Deployed Smart Contracts</span>
             </div>
             <BarChart
               chartData={DeployedScriptsChartData}

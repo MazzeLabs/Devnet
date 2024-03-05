@@ -3317,7 +3317,7 @@ body {
 	white-space: pre-line;
 	mix-blend-mode: normal;
 	background-color: #000520;
-	background-image: url(https://mazze.io/images/bg-maze6.png);
+	background-image: url(https://i.ibb.co/ggP3tSh/bg-maze6.png);
 	background-position: 50%;
 	background-repeat: repeat-y;
 	background-size: 130vh;
@@ -3754,9 +3754,8 @@ strong {
 }
 
 .price-text {
-	letter-spacing: -.1rem;
 	font-family: Mona Sans, sans-serif;
-	font-weight: 700
+	font-size: 16px;
 }
 
 .price-wrapper-month {
@@ -3883,6 +3882,7 @@ strong {
 	color: #000520;
 	background-color: #ffa200
 }
+
 .charged-frequency-wrapper {
 	justify-content: center;
 	align-items: center;
@@ -6593,9 +6593,7 @@ strong {
 		min-width: 100%
 	}
 
-	.price-text {
-		
-	}
+	.price-text {}
 
 	.subtitle-heading.section {
 		width: auto
@@ -6629,9 +6627,7 @@ strong {
 		align-self: stretch
 	}
 
-	.engulfstudio-logo {
-		
-	}
+	.engulfstudio-logo {}
 
 	.author-detail {
 		text-align: center
