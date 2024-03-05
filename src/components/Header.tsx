@@ -14,11 +14,11 @@ export const Header = () => {
                     </a>
                     <div className="navbar-buttons">
                         <div>
-                            <Link style={{ marginRight: '10px', cursor: 'pointer' }} to="/" className="pricing-detail">Home</Link>
-                            <Link style={{ marginRight: '10px', cursor: 'pointer' }} to="/analytics" className="pricing-detail">Analytics</Link>
-                            <Link style={{ marginRight: '10px', cursor: 'pointer' }} to="/validators" className="pricing-detail">Validators</Link>
-                            <Link style={{ marginRight: '10px', cursor: 'pointer' }} to="/faucet" className="pricing-detail">Faucet</Link>
-                            <Link style={{ marginRight: '10px', cursor: 'pointer' }} to="/leaderboard" className="pricing-detail">Leaderboard</Link>
+                            <Link style={{ marginRight: '26px', cursor: 'pointer' }} to="/" className="pricing-detail">Home</Link>
+                            <Link style={{ marginRight: '26px', cursor: 'pointer' }} to="/analytics" className="pricing-detail">Analytics</Link>
+                            <Link style={{ marginRight: '26px', cursor: 'pointer' }} to="/validators" className="pricing-detail">Validators</Link>
+                            <Link style={{ marginRight: '26px', cursor: 'pointer' }} to="/faucet" className="pricing-detail">Faucet</Link>
+                            <Link style={{ marginRight: '26px', cursor: 'pointer' }} to="/leaderboard" className="pricing-detail">Leaderboard</Link>
                         </div>
                         <a href="https://docs.mazze.io" target="_blank" id="w-node-_42939e0c-fbc1-4837-03c5-538c389ab0e5-389ab0b1" className="button wide-card w-inline-block">
                             <div>Documentation</div>
