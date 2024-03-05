@@ -107,7 +107,7 @@ export const Analytics = () => {
   const TPSChartData = [
     {
       name: "",
-      data: [0.00715, 0.00598, 0.01640, 0.01606, 0.02840, 0.00140]
+      data: [15, 59.8, 16.4, 16.6, 28.4, 34.4]
     },
   ];
 
@@ -522,7 +522,7 @@ export const Analytics = () => {
                 <div className="pricing-detail"><strong>Total Supply</strong></div>
               </div>
               <div className="price-wrapper-month">
-                <h3 className="price-text" style={{ marginBottom: '0px' }}>10,030,962</h3>
+                <h3 className="price-text" style={{ marginBottom: '0px' }}>5,000,000,000</h3>
               </div>
             </div>
           </div>
@@ -533,7 +533,7 @@ export const Analytics = () => {
               </div>
               <div className="price-wrapper-month">
                 <div>
-                  <h3 className="price-text" style={{ marginBottom: '0px' }}>2,854</h3>
+                  <h3 className="price-text" style={{ marginBottom: '0px' }}>2,871</h3>
                 </div>
                 <div>
                   <h3 className="price-text" style={{ marginBottom: '0px' }}>Next</h3>
