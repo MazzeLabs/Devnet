@@ -73,7 +73,7 @@ export const Block: React.FC<BlockProps> = ({ hash, blocknumber, timestamp, txns
               </button>
             </span>
           </p>
-          <p style={{ color: '#ffa200', fontSize: '16px' }}>{txns} txns</p>
+          <p style={{ color: '#ffa200', fontSize: '16px' }} className="mb-0">{txns} txns</p>
         </div>
         <div style={{ marginLeft: 'auto' }}>
           <span>{token} MAZZE</span>
