@@ -2,11 +2,10 @@ type BlockTransactionsProps = {
     item: any
 }
 
-export const BlockTransactions = ({ item } : BlockTransactionsProps) => {
-    console.log(item);
+export const BlockTransactions = ({ item }: BlockTransactionsProps) => {
 
     return (
-        <div>
+        <div className="cards">
             Hello Transactions
         </div>
     )
