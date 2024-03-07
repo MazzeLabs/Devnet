@@ -25,6 +25,7 @@ const Tooltip: React.FC<TooltipProps> = ({ show, message }) => {
 };
 export const Block: React.FC<BlockProps> = ({ hash, blocknumber, timestamp, txns, cdt }) => {
   const [disHash, setDisHash] = useState<string>();
+  const [disTimeStamp, setDisTimeStamp] = useState<string>();
   const [token, setToken] = useState<number>();
   const [copied, setCopied] = useState(false);
 
@@ -39,6 +40,22 @@ export const Block: React.FC<BlockProps> = ({ hash, blocknumber, timestamp, txns
     setDisHash(`${firstPart}...${lastPart}`);
     const txntoken = Math.floor(cdt / 1000)
     setToken(txntoken);
+
+    const decimalTimestamp = parseInt(timestamp, 16);
+    const millisecondsSinceEpoch = decimalTimestamp * 1000;
+
+    const date = new Date(millisecondsSinceEpoch);
+
+    const currentDate = new Date();
+
+    const timeDifference = currentDate.getTime() - date.getTime();
+
+    const minutesDiff = Math.floor(timeDifference / (1000 * 60));
+    const secondsDiff = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    const timeDiffString = `${minutesDiff} minutes, ${secondsDiff} seconds ago`;
+
+    setDisTimeStamp(timeDiffString)
 
   }, [hash]);
 
@@ -59,9 +76,9 @@ export const Block: React.FC<BlockProps> = ({ hash, blocknumber, timestamp, txns
         </svg>
         <div style={{ marginLeft: '10px' }}>
           <span style={{ color: '#ffa200', fontSize: '16px' }}>{blocknumber} </span><br />
-          {timestamp}
+          {disTimeStamp}
         </div>
-        <div style={{ textAlign: 'center', marginLeft: '3.25rem' }}>
+        <div style={{ textAlign: 'center' }} className="mx-auto">
           <p className="flex items-center">
             Hash
             <span className="ms-2 flex address-label">{disHash}

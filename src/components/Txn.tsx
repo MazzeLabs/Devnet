@@ -28,6 +28,7 @@ export const Transaction: React.FC<BlockProps> = ({ hash, from, to, timestamp, c
   const [disHash, setDisHash] = useState<string>();
   const [disFrom, setDisFrom] = useState<string>();
   const [disTo, setDisTo] = useState<string>();
+  const [disTimeStamp, setDisTimeStamp] = useState<string>();
   const [fromCopied, setFromCopied] = useState(false);
   const [toCopied, setToCopied] = useState(false);
 
@@ -46,6 +47,22 @@ export const Transaction: React.FC<BlockProps> = ({ hash, from, to, timestamp, c
     const lastTo = to.slice(-4);
 
     setDisTo(`${firstTo}...${lastTo}`);
+
+    const decimalTimestamp = parseInt(timestamp, 16);
+    const millisecondsSinceEpoch = decimalTimestamp * 1000;
+
+    const date = new Date(millisecondsSinceEpoch);
+
+    const currentDate = new Date();
+
+    const timeDifference = currentDate.getTime() - date.getTime();
+
+    const minutesDiff = Math.floor(timeDifference / (1000 * 60));
+    const secondsDiff = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    const timeDiffString = `${minutesDiff} minutes, ${secondsDiff} seconds ago`;
+
+    setDisTimeStamp(timeDiffString)
   }, [hash]);
 
   const handleFromCopy = () => {
@@ -75,9 +92,9 @@ export const Transaction: React.FC<BlockProps> = ({ hash, from, to, timestamp, c
 
         <div style={{ marginLeft: '10px' }}>
           <span style={{ color: '#ffa200', fontSize: '16px' }}>{disHash} </span><br />
-          {timestamp}
+          {disTimeStamp}
         </div>
-        <div style={{ textAlign: 'center', marginLeft: '3.25rem' }}>
+        <div style={{ textAlign: 'center' }} className="ms-auto" >
           <p className="flex items-center">
             From
             <span className="ms-2 flex address-label">{disFrom}
@@ -105,6 +122,6 @@ export const Transaction: React.FC<BlockProps> = ({ hash, from, to, timestamp, c
           <span>{cdt} MAZZE</span>
         </div>
       </div>
-    </Link>
+    </Link >
   )
 }

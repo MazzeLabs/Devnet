@@ -145,10 +145,7 @@ export const TransactionDetail = () => {
                   </div>
                   <div className="col-span-3">
                     <div className="flex">
-                      <div>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAK5JREFUSEtjjBeu/8+ABp5NPIcuxCCVb4Qhhk2AWL2MoxaDgo/Y4BqaQc3RKoORuGzlDYlKSMQqOvzwPIZSxlGLQWEyvIPadYkvRuLCVkqtLJpLVFoK70vGUIctezKOWgwKp+Ed1NgKEKJSEYWKsJZcFJpJlPZRi4kKJmoowlqAYKvGiC2/idU7ajE4+ogNLmxxTazewRXU2MpqbFUbNh8Tq5foanHUYlyFyKAPagC89cJ620xcLAAAAABJRU5ErkJggg==" />
-                      </div>
-                      <span className="flex address-label ms-4">{disFrom}
+                      <span className="flex address-label">{disFrom}
                         <button onClick={handleFromCopy} className="relative">
                           <Tooltip show={fromCopied} message="Copied!" />
                           <svg className="w-4 h-4 ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon">
@@ -166,10 +163,7 @@ export const TransactionDetail = () => {
                   </div>
                   <div className="col-span-3">
                     <div className="flex">
-                      <div>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAJlJREFUSEtjdPyt8J8BDZx/IIMuRBHfUOEJhn7GUYtBYTK8g1rgtg1G4sKWGChJXdhCkHHUYlCQjgY1KBQen9InKn3Jml3EUEdR4hq1GFe4D/6gVjnqj1FyEZWKKFTEOGoxhSFItPaBC2pia6fRAmToFiCDKo5FXgljhOQbsbdEZRVi9WJtcxGrGZtLiNU7ajE49IgNLkqCGgBn8bnxtfrnxQAAAABJRU5ErkJggg==" />
-                      </div>
-                      <span className="flex address-label ms-4">{disTo}
+                      <span className="flex address-label">{disTo}
                         <button onClick={handleToCopy} className="relative">
                           <Tooltip show={toCopied} message="Copied!" />
                           <svg className="w-4 h-4 ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon">
@@ -195,7 +189,7 @@ export const TransactionDetail = () => {
                     Amount
                   </div>
                   <div className="col-span-3">
-                    {txn.cdt} MAZZE
+                    0.006 MAZZE
                   </div>
                 </div>
               </div>

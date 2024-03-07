@@ -99,10 +99,7 @@ export const BlockOverview = ({ item }: BlockOverviewProps) => {
             </div>
             <div className="col-span-3">
               <div className="flex">
-                <div>
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAK5JREFUSEtjjBeu/8+ABp5NPIcuxCCVb4Qhhk2AWL2MoxaDgo/Y4BqaQc3RKoORuGzlDYlKSMQqOvzwPIZSxlGLQWEyvIPadYkvRuLCVkqtLJpLVFoK70vGUIctezKOWgwKp+Ed1NgKEKJSEYWKsJZcFJpJlPZRi4kKJmoowlqAYKvGiC2/idU7ajE4+ogNLmxxTazewRXU2MpqbFUbNh8Tq5foanHUYlyFyKAPagC89cJ620xcLAAAAABJRU5ErkJggg==" />
-                </div>
-                <span className="flex address-label ms-4">{minerHash}
+                <span className="flex address-label">{minerHash}
                   <button onClick={handleMinerCopy} className="relative">
                     <Tooltip show={minerCopied} message="Copied!" />
                     <svg className="w-4 h-4 ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon">

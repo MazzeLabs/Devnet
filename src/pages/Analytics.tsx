@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 import { BarChart } from "../components/BarChart";
 import AreaChart from "../components/AreaChart";
+import blocks from "../data/blocks.json";
 
 export const Analytics = () => {
 
@@ -497,6 +498,8 @@ export const Analytics = () => {
     }
   }
 
+  const sortedBlocks = blocks.sort((a, b) => parseInt(b.number, 16) - parseInt(a.number, 16)).slice(0, 6);
+
   return (
     <div>
       <div className="main-container w-container">
@@ -533,7 +536,7 @@ export const Analytics = () => {
               </div>
               <div className="price-wrapper-month">
                 <div>
-                  <h3 className="price-text" style={{ marginBottom: '0px' }}>2,871</h3>
+                  <h3 className="price-text" style={{ marginBottom: '0px' }}>{parseInt(sortedBlocks[0].number, 16)}</h3>
                 </div>
                 <div>
                   <h3 className="price-text" style={{ marginBottom: '0px' }}>Next</h3>
