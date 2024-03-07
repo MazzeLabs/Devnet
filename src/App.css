@@ -5977,10 +5977,6 @@ strong {
 		display: flex
 	}
 
-	.price-text {
-		font-size: 32px
-	}
-
 	.hero-wrapper {
 		z-index: 30;
 		text-align: left;
@@ -6592,8 +6588,6 @@ strong {
 	.main-container {
 		min-width: 100%
 	}
-
-	.price-text {}
 
 	.subtitle-heading.section {
 		width: auto
