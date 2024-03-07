@@ -1,4 +1,3 @@
-import React, { Children } from 'react';
 import {
   ComposableMap,
   Geographies,
@@ -13,8 +12,8 @@ const citiesData = [
 
 const Map = () => {
   return (
-    <div className='cards mt-5 flex' style={{ pointerEvents: 'none' }}>
-      <div className='px-3' style={{width: '150px'}}>
+    <div className='cards mt-5' style={{ pointerEvents: 'none' }}>
+      <div className='px-3 hidden md:block' style={{ width: '150px' }}>
         <h3>1 Nodes</h3>
         <p>1 Countries</p>
         <p>1 Cities</p>

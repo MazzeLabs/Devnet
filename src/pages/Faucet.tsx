@@ -22,7 +22,7 @@ export const Faucet = () => {
 
         <div id="alert-1" className="cards flex items-center p-4 mb-4 text-white rounded-lg" role="alert">
           <h3 className="orange">Faucet</h3>
-          <div className="ms-3 text-sm font-medium">
+          <div className="mx-3 text-sm font-medium">
             Here you can claim 10 MAZZEs once per address.<br />
             Please complete the captcha and provide an address in the required field.
           </div>

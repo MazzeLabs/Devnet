@@ -76,12 +76,13 @@ export const Block: React.FC<BlockProps> = ({ hash, blocknumber, timestamp, txns
         </svg>
         <div style={{ marginLeft: '10px' }}>
           <span style={{ color: '#ffa200', fontSize: '16px' }}>{blocknumber} </span><br />
-          {disTimeStamp}
+          <span className="hidden md:block">{disTimeStamp}</span>
         </div>
         <div style={{ textAlign: 'center' }} className="mx-auto">
           <p className="flex items-center">
-            Hash
-            <span className="ms-2 flex address-label">{disHash}
+            <span className="hidden md:block">Hash</span>
+            <span className="ms-2 flex address-label">
+              {disHash}
               <button onClick={handleCopy} className="relative">
                 <Tooltip show={copied} message="Copied!" />
                 <svg className="w-4 h-4 ms-2" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyIcon">

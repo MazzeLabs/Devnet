@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import data from '../data/blocks.json';
-import { TxnRow } from './TxnRow';
 import { BlockRow } from './BlockRow';
 
 const itemsPerPage = 15;
@@ -12,8 +11,6 @@ const AllBlocksPagination: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
 
     const totalPages = Math.ceil(data.length / itemsPerPage);
-
-    const visiblePages = totalPages > 5 ? 5 : totalPages;
 
     const handlePageChange = (pageNumber: number) => {
         setCurrentPage(pageNumber);

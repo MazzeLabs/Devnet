@@ -2,8 +2,6 @@ import AllTransactionsPagination from "../components/AllTxnPagination"
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 
-import transactionData from "../data/transactions.json"
-
 export const AllTransactions = () => {
   return (
     <>

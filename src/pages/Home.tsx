@@ -1,7 +1,5 @@
-import { useEffect } from "react";
 import { Header } from "../components/Header"
 import LineChart from "../components/LineChart";
-import accounts from "../data/accounts.json";
 import blocks from "../data/blocks.json";
 import transactions from "../data/transactions.json";
 import { Block } from "../components/Block";
@@ -128,7 +126,7 @@ export const Home = () => {
             placeholder="Search Explorer"
           />
         </div>
-        <div className="grid grid-rows-2 grid-cols-3 gap-4" style={{ marginTop: '25px', marginBottom: '35px' }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" style={{ marginTop: '25px', marginBottom: '35px' }}>
           <div className="cta-card col">
             <div className="pricing-crown">
               <div className="plan-title">
@@ -160,7 +158,7 @@ export const Home = () => {
               chartOptions={lineChartOptions}
             />
           </div>
-          <div className="cta-card col" style={{ display: 'flex', flexDirection: 'row', padding: '0' }}>
+          <div className="cta-card col hidden lg:flex" style={{ flexDirection: 'row', padding: '0' }}>
             <div className="relative">
               <div className="layer"></div>
               <div className="layer"></div>
@@ -200,7 +198,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
             <h3>Latest Blocks</h3>
             {sortedBlocks.map(block => (

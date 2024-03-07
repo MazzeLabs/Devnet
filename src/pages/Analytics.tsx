@@ -223,90 +223,90 @@ export const Analytics = () => {
     }
   ]
 
-  const DeployedScriptsChartOption: any = {
-    chart: {
-      toolbar: {
-        show: false,
-      },
-      dropShadow: {
-        enabled: true,
-        top: 13,
-        left: 0,
-        blur: 10,
-        opacity: 0.1,
-        color: "#4318FF",
-      },
-    },
-    colors: ["#ffa200", "#39B8FF"],
-    markers: {
-      size: 1,
-      colors: "read",
-      strokeColors: "#ffa200",
-      strokeWidth: 3,
-      strokeOpacity: 0.9,
-      strokeDashArray: 0,
-      fillOpacity: 1,
-      discrete: [],
-      shape: "circle",
-      radius: 2,
-      offsetX: 0,
-      offsetY: 0,
-      showNullDataPoints: true,
-    },
-    tooltip: {
-      theme: "dark",
-      enabled: false
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    stroke: {
-      curve: "smooth",
-      type: "line",
-      width: 2
-    },
-    xaxis: {
-      type: "numeric",
-      categories: ["02-22", "", "02-24", "", "02-26"],
-      labels: {
-        rotate: 0,
-        style: {
-          colors: "#A3AED0",
-          fontSize: "12px",
-          fontWeight: "500",
-        },
-      },
-      formatter: function (index: number, value: string) {
-        return index % 2 === 0 ? value : ""; // Hide labels for even indexes
-      },
-      axisBorder: {
-        show: false,
-      },
-      axisTicks: {
-        show: false,
-      }
-    },
-    yaxis: {
-      labels: {
-        style: {
-          colors: "#A3AED0",
-          fontSize: "12px",
-          fontWeight: "500",
-        },
-      },
-      show: true,
-    },
-    legend: {
-      show: false,
-    },
-    grid: {
-      show: false,
-      row: {
-        color: "#7551FF",
-        opacity: 0.2,
-      },
-    }
-  };
+  // const DeployedScriptsChartOption: any = {
+  //   chart: {
+  //     toolbar: {
+  //       show: false,
+  //     },
+  //     dropShadow: {
+  //       enabled: true,
+  //       top: 13,
+  //       left: 0,
+  //       blur: 10,
+  //       opacity: 0.1,
+  //       color: "#4318FF",
+  //     },
+  //   },
+  //   colors: ["#ffa200", "#39B8FF"],
+  //   markers: {
+  //     size: 1,
+  //     colors: "read",
+  //     strokeColors: "#ffa200",
+  //     strokeWidth: 3,
+  //     strokeOpacity: 0.9,
+  //     strokeDashArray: 0,
+  //     fillOpacity: 1,
+  //     discrete: [],
+  //     shape: "circle",
+  //     radius: 2,
+  //     offsetX: 0,
+  //     offsetY: 0,
+  //     showNullDataPoints: true,
+  //   },
+  //   tooltip: {
+  //     theme: "dark",
+  //     enabled: false
+  //   },
+  //   dataLabels: {
+  //     enabled: false,
+  //   },
+  //   stroke: {
+  //     curve: "smooth",
+  //     type: "line",
+  //     width: 2
+  //   },
+  //   xaxis: {
+  //     type: "numeric",
+  //     categories: ["02-22", "", "02-24", "", "02-26"],
+  //     labels: {
+  //       rotate: 0,
+  //       style: {
+  //         colors: "#A3AED0",
+  //         fontSize: "12px",
+  //         fontWeight: "500",
+  //       },
+  //     },
+  //     formatter: function (index: number, value: string) {
+  //       return index % 2 === 0 ? value : ""; // Hide labels for even indexes
+  //     },
+  //     axisBorder: {
+  //       show: false,
+  //     },
+  //     axisTicks: {
+  //       show: false,
+  //     }
+  //   },
+  //   yaxis: {
+  //     labels: {
+  //       style: {
+  //         colors: "#A3AED0",
+  //         fontSize: "12px",
+  //         fontWeight: "500",
+  //       },
+  //     },
+  //     show: true,
+  //   },
+  //   legend: {
+  //     show: false,
+  //   },
+  //   grid: {
+  //     show: false,
+  //     row: {
+  //       color: "#7551FF",
+  //       opacity: 0.2,
+  //     },
+  //   }
+  // };
 
   const GasChartData = [
     {
@@ -518,7 +518,7 @@ export const Analytics = () => {
           />
         </div>
 
-        <div className="grid grid-cols-4 gap-4" style={{ marginTop: '25px', marginBottom: '35px' }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" style={{ marginTop: '25px', marginBottom: '35px' }}>
           <div className="cta-card col">
             <div className="pricing-crown">
               <div className="plan-title">
@@ -588,7 +588,7 @@ export const Analytics = () => {
           </details>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
           <div className="cta-card col" style={{ padding: '0' }}>
             <div className="pt-3 ps-3">
               <span>User Transactions</span>

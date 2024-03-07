@@ -92,11 +92,11 @@ export const Transaction: React.FC<BlockProps> = ({ hash, from, to, timestamp, c
 
         <div style={{ marginLeft: '10px' }}>
           <span style={{ color: '#ffa200', fontSize: '16px' }}>{disHash} </span><br />
-          {disTimeStamp}
+          <span className="hidden md:block">{disTimeStamp}</span>
         </div>
         <div style={{ textAlign: 'center' }} className="ms-auto" >
           <p className="flex items-center">
-            From
+            <span className="hidden md:block">From</span>
             <span className="ms-2 flex address-label">{disFrom}
               <button onClick={handleFromCopy} className="relative">
                 <Tooltip show={fromCopied} message="Copied!" />
@@ -107,7 +107,7 @@ export const Transaction: React.FC<BlockProps> = ({ hash, from, to, timestamp, c
             </span>
           </p>
           <p className="flex items-center mb-0">
-            To
+            <span className="hidden md:block">To</span>
             <span className="ms-2 flex address-label ms-auto">{disTo}
               <button onClick={handleToCopy} className="relative">
                 <Tooltip show={toCopied} message="Copied!" />
