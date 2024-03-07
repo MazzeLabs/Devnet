@@ -206,9 +206,11 @@ export const Home = () => {
             {sortedBlocks.map(block => (
               <Block hash={block.hash} blocknumber={parseInt(block.number, 16)} timestamp={block.timestamp} txns={block.transactions.length} cdt={parseInt(block.totalTxs, 16)} />
             ))}
-            <div className="cards p-4 text-center cursor-pointer" style={{ display: 'block' }}>
-              View All Blocks
-            </div>
+            <Link to="/allblocks">
+              <div className="cards p-4 text-center cursor-pointer" style={{ display: 'block' }}>
+                View All Blocks
+              </div>
+            </Link>
           </div>
           <div>
             <h3>Latest Transactions</h3>

@@ -10,6 +10,7 @@ import { Leaderboard } from './pages/Leaderboard';
 import { DetailBlock } from './subpages/BlockDetail';
 import { TransactionDetail } from './subpages/TransactionDetail';
 import { AllTransactions } from './subpages/AllTransactions';
+import { AllBlocks } from './subpages/AllBlocks';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/faucet" element={<Faucet />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/alltxn" element={<AllTransactions />} />
+        <Route path="/allblocks" element={<AllBlocks />} />
         <Route path="/block/:blockNumber/*" element={<DetailBlock />} />
         <Route path="/txn/:transactionhash/*" element={<TransactionDetail />} />
       </Routes>
