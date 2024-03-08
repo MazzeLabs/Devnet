@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer className="section-footer wf-section mt-10">
-      <div className="cards">
+      <div className="cards md:flex">
         <div className="footer-content-wrapper">
           <div className="footer-brand">
             <a href="/" className="footer-logo-mark w-inline-block">
@@ -108,8 +108,8 @@ export const Footer = () => {
                 </a>
                 <a href="https://t.me/MazzeLabs" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
+                      <path fill="#a3a7bf" d="
                       M 242.65 0.00
                       L 257.50 0.00
                       Q 355.41 4.47 424.36 70.99
@@ -153,14 +153,14 @@ export const Footer = () => {
                       Q 207.17 364.75 229.38 343.71
                       Q 229.81 343.30 230.29 343.66
                       Z"></path>
-                  </svg>
+                    </svg>
                   </div>
                   <div>Telegram</div>
                 </a>
                 <a href="https://github.com/MazzeLabs" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
+                      <path fill="#a3a7bf" d="
                       M 500.00 241.88
                       L 500.00 274.21
                       Q 498.07 289.23 495.18 303.97
@@ -231,7 +231,7 @@ export const Footer = () => {
                       C 470.53 124.71 492.30 175.25 498.41 229.01
                       Q 499.14 235.45 500.00 241.88
                       Z"></path>
-                  </svg>
+                    </svg>
                   </div>
                   <div>GitHub</div>
                 </a>
@@ -239,8 +239,8 @@ export const Footer = () => {
               <div className="w-layout-grid footer-social-grid">
                 <a href="https://notion.mazze.io/" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 519.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 519.00">
+                      <path fill="#a3a7bf" d="
                       M 242.89 0.00
                       L 257.48 0.00
                       Q 311.93 2.06 358.27 25.52
@@ -278,7 +278,7 @@ export const Footer = () => {
                       Q 141.62 426.19 144.55 428.63
                       C 151.60 434.49 160.68 434.24 169.50 433.73
                       Z"></path>
-                    <path fill="#a3a7bf" d="
+                      <path fill="#a3a7bf" d="
                       M 369.28 141.34
                       C 299.38 145.59 232.44 149.57 163.50 153.62
                       C 156.16 154.05 149.58 153.55 143.00 148.48
@@ -292,7 +292,7 @@ export const Footer = () => {
                       Q 369.39 137.84 370.30 139.46
                       A 1.26 1.26 0.0 0 1 369.28 141.34
                       Z"></path>
-                    <path fill="#a3a7bf" d="
+                      <path fill="#a3a7bf" d="
                       M 166.66 177.12
                       Q 274.94 170.73 383.22 164.51
                       Q 387.09 164.29 388.73 164.84
@@ -347,14 +347,14 @@ export const Footer = () => {
                       Q 231.81 356.55 231.81 355.92
                       L 231.81 257.77
                       Z"></path>
-                  </svg>
+                    </svg>
                   </div>
                   <div>Notion</div>
                 </a>
                 <a href="https://mazzelabs.medium.com/" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
+                      <path fill="#a3a7bf" d="
                       M 236.88 0.00
                       L 263.00 0.00
                       Q 277.91 1.22 285.88 2.38
@@ -415,14 +415,14 @@ export const Footer = () => {
                       Q 434.17 355.64 436.70 349.74
                       Q 444.83 330.83 447.10 309.88
                       Z"></path>
-                  </svg>
+                    </svg>
                   </div>
                   <div>Medium</div>
                 </a>
                 <a href="https://discord.mazze.io/" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
+                      <path fill="#a3a7bf" d="
                       M 242.88 0.00
                       L 257.26 0.00
                       Q 356.54 4.43 426.02 72.34
@@ -492,8 +492,8 @@ export const Footer = () => {
                       Q 273.18 358.41 343.98 328.37
                       Q 346.77 327.18 349.36 328.75
                       Z"></path>
-                    <ellipse fill="#a3a7bf" cx="0.00" cy="0.00" transform="translate(186.37,253.96) rotate(89.0)" rx="36.88" ry="34.25"></ellipse>
-                    <ellipse fill="#a3a7bf" cx="0.00" cy="0.00" transform="translate(313.97,253.98) rotate(90.0)" rx="36.86" ry="34.31"></ellipse>
+                      <ellipse fill="#a3a7bf" cx="0.00" cy="0.00" transform="translate(186.37,253.96) rotate(89.0)" rx="36.88" ry="34.25"></ellipse>
+                      <ellipse fill="#a3a7bf" cx="0.00" cy="0.00" transform="translate(313.97,253.98) rotate(90.0)" rx="36.86" ry="34.31"></ellipse>
                     </svg>
                   </div>
                   <div>Discord</div>
@@ -502,8 +502,8 @@ export const Footer = () => {
               <div className="w-layout-grid footer-social-grid">
                 <a href="https://docs.mazze.io/" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
+                      <path fill="#a3a7bf" d="
                       M 236.88 0.00
                       L 263.00 0.00
                       Q 278.13 1.24 285.89 2.37
@@ -565,16 +565,16 @@ export const Footer = () => {
                       A 1.70 1.68 -33.5 0 1 260.58 342.99
                       C 243.57 322.67 213.20 324.96 198.84 347.05
                       Z"></path>
-                    <ellipse fill="#a3a7bf" cx="418.15" cy="270.73" rx="11.62" ry="11.14"></ellipse>
-                    <ellipse fill="#a3a7bf" cx="0.00" cy="0.00" transform="translate(231.15,364.19) rotate(0.2)" rx="11.55" ry="11.12"></ellipse>
-                  </svg>
+                      <ellipse fill="#a3a7bf" cx="418.15" cy="270.73" rx="11.62" ry="11.14"></ellipse>
+                      <ellipse fill="#a3a7bf" cx="0.00" cy="0.00" transform="translate(231.15,364.19) rotate(0.2)" rx="11.55" ry="11.12"></ellipse>
+                    </svg>
                   </div>
                   <div>Documentation</div>
                 </a>
                 <a href="https://mazze.io/whitepaperV1.pdf" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
+                      <path fill="#a3a7bf" d="
                       M 242.65 0.00
                       L 257.50 0.00
                       Q 355.41 4.47 424.36 70.99
@@ -619,18 +619,18 @@ export const Footer = () => {
                       Q 347.77 114.47 325.36 91.55
                       Q 324.85 91.02 324.85 91.76
                       Z"></path>
-                    <rect fill="#a3a7bf" x="169.96" y="187.60" width="160.08" height="14.82" rx="7.33"></rect>
-                    <rect fill="#a3a7bf" x="-68.09" y="-7.37" transform="translate(238.11,231.35) rotate(0.1)" width="136.18" height="14.74" rx="7.27"></rect>
-                    <rect fill="#a3a7bf" x="170.00" y="259.53" width="103.66" height="14.76" rx="7.26"></rect>
-                    <rect fill="#a3a7bf" x="170.02" y="295.85" width="88.04" height="14.82" rx="7.27"></rect>
+                      <rect fill="#a3a7bf" x="169.96" y="187.60" width="160.08" height="14.82" rx="7.33"></rect>
+                      <rect fill="#a3a7bf" x="-68.09" y="-7.37" transform="translate(238.11,231.35) rotate(0.1)" width="136.18" height="14.74" rx="7.27"></rect>
+                      <rect fill="#a3a7bf" x="170.00" y="259.53" width="103.66" height="14.76" rx="7.26"></rect>
+                      <rect fill="#a3a7bf" x="170.02" y="295.85" width="88.04" height="14.82" rx="7.27"></rect>
                     </svg>
                   </div>
                   <div>Whitepaper</div>
                 </a>
                 <a href="https://zealy.io/c/mazze" target="_blank" className="footer-social-link w-inline-block">
                   <div className="social-logos w-embed">
-                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
-                    <path fill="#a3a7bf" d="
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 500.00 500.00">
+                      <path fill="#a3a7bf" d="
                       M 242.90 0.00
                       L 257.25 0.00
                       Q 263.37 0.43 269.49 0.90
@@ -687,7 +687,7 @@ export const Footer = () => {
                       L 106.45 237.03
                       A 1.31 1.31 0.0 0 1 106.79 238.36
                       Z"></path>
-                    <path fill="#a3a7bf" d="
+                      <path fill="#a3a7bf" d="
                       M 261.16 336.63
                       Q 259.92 337.56 261.46 337.46
                       Q 329.90 332.92 395.33 315.09
