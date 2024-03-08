@@ -12,7 +12,7 @@ const citiesData = [
 
 const Map = () => {
   return (
-    <div className='cards mt-5' style={{ pointerEvents: 'none' }}>
+    <div className='cards mt-5 md:flex' style={{ pointerEvents: 'none' }}>
       <div className='px-3 hidden md:block' style={{ width: '150px' }}>
         <h3>1 Nodes</h3>
         <p>1 Countries</p>
