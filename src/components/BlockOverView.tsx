@@ -25,6 +25,7 @@ export const BlockOverview = ({ item }: BlockOverviewProps) => {
   const [minerCopied, setMinerCopied] = useState(false);
   const [disHash, setDisHash] = useState<string>();
   const [minerHash, setMinerHash] = useState<string>();
+  const [disTimeStamp, setDisTimeStamp] = useState<string>();
 
   const handleHashCopy = () => {
     navigator.clipboard.writeText(item.hash).then(() => {
@@ -53,7 +54,13 @@ export const BlockOverview = ({ item }: BlockOverviewProps) => {
 
     setDisHash(`${firstPart}...${lastPart}`);
     setMinerHash(`${firstMinerPart}...${lastMinerPart}`)
+    const decimalTimestamp = parseInt(item.timestamp, 16);
+    const millisecondsSinceEpoch = decimalTimestamp * 1000;
 
+    const date = new Date(millisecondsSinceEpoch);
+    const formattedDate = `${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${date.getFullYear()} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
+
+    setDisTimeStamp(formattedDate)
   }, [item]);
 
   return (
@@ -89,7 +96,7 @@ export const BlockOverview = ({ item }: BlockOverviewProps) => {
               Timestamp
             </div>
             <div className="col-span-3">
-              {item.timestamp}
+              {disTimeStamp}
             </div>
           </div>
 

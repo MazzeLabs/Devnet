@@ -27,6 +27,7 @@ export const TransactionDetail = () => {
   const [disTo, setDisTo] = useState<string>();
   const [fromCopied, setFromCopied] = useState(false);
   const [toCopied, setToCopied] = useState(false);
+  const [disTimeStamp, setDisTimeStamp] = useState<string>();
 
   useEffect(() => {
     if (transactionhash) {
@@ -51,6 +52,13 @@ export const TransactionDetail = () => {
       const lastTo = txn.to.slice(-4);
 
       setDisTo(`${firstTo}...${lastTo}`);
+      const decimalTimestamp = parseInt(txn.blockTimestamp, 16);
+      const millisecondsSinceEpoch = decimalTimestamp * 1000;
+
+      const date = new Date(millisecondsSinceEpoch);
+      const formattedDate = `${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${date.getFullYear()} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
+
+      setDisTimeStamp(formattedDate)
     }
   }, [txn])
 
@@ -206,7 +214,7 @@ export const TransactionDetail = () => {
                   <div className="col">Timestamp</div>
                   <div className="col-span-3">
                     <div className="flex">
-                      {txn.blockTimestamp}
+                      {disTimeStamp}
                     </div>
                   </div>
                 </div>
